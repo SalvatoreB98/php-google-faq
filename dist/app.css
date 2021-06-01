@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+}
+header img {
+  width: 100px;
+  height: auto;
+}
+header .logo-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .page-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4e4e4e;
+}
