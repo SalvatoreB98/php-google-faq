@@ -4,6 +4,8 @@
 
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f1f1f;
+  font-size: 0.9em;
 }
 
 .container {
@@ -14,6 +16,10 @@ html {
 
 h2 {
   font-weight: 500;
+}
+
+h4 {
+  color: #4e4e4e;
 }
 
 header {
