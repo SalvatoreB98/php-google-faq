@@ -1,3 +1,68 @@
+.vertical-align {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #cecece;
+}
+header a {
+  color: #4e4e4e;
+  text-decoration: none;
+  margin-right: 20px;
+  height: 100%;
+  font-weight: 500;
+  padding: 10px 0px;
+}
+header .active {
+  color: #3367d6;
+  border-bottom: 2px solid #3367d6;
+}
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 100px;
+  height: auto;
+}
+header .logo-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .logo-container img {
+  padding: 10px;
+}
+header .page-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+header .avatar {
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+}
+
+nav {
+  display: flex;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,29 +89,14 @@ h4 {
   color: #4e4e4e;
 }
 
-header {
-  display: flex;
-}
-header img {
-  width: 100px;
-  height: auto;
-}
-header .logo-container {
-  display: inline-block;
-  vertical-align: middle;
-}
-header .page-title {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 17px;
-  font-weight: 600;
-  color: #4e4e4e;
-}
-
 ol li {
   padding-left: 10px;
   margin-top: 10px;
 }
 ol ol {
   list-style-type: lower-alpha;
+}
+
+main {
+  margin-top: 175px;
 }

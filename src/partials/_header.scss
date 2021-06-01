@@ -1,0 +1,53 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0;
+    border-bottom: 1px solid lighten($gray,50%) ;
+    a{
+        color: $gray;
+        text-decoration: none;
+        margin-right: 20px;
+        height: 100%;
+        font-weight: 500;
+        padding: 10px 0px;
+    }
+    .active{
+        color: $secondaryColor;
+        border-bottom: 2px solid $secondaryColor;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    img{
+        width: 100px;
+        height: auto;
+    }
+    .logo-container{
+        @include vertical-align;
+        img{
+            padding: 10px
+        }
+    }
+    .page-title{
+        @include vertical-align;
+        font-size: 17px;
+        font-weight: 600;
+        color: $gray
+    }
+    .avatar{
+        width: 50px;
+        height: 50px;
+        padding: 7px;
+    }
+}
+nav{
+    display: flex;
+    padding:0;
+}

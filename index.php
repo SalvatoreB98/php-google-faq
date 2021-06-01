@@ -66,50 +66,64 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="dist/app.css">
       <title>Domande frequenti</title>
   </head>
 
   <body>
       <header>
-          <div>
-              <div class="logo-container"> <img src="imgs/logo.png" alt=""></div>
-              <div class="page-title"> Domande Frequenti </div>
+          <div class="flex">
+              <div>
+                  <div class="logo-container"> <img src="imgs/logo.png" alt=""></div>
+                  <div class="page-title"> Privacy e termini </div>
+              </div>
+              <div>
+                  <i class="fa fa-th-large vertical-align interactive" aria-hidden="true"></i>
+                  <img src="imgs/avatar.png" class="avatar vertical-align interactive" alt="avatar">
+              </div>
           </div>
-          <div>
-
-          </div>
+          <nav>
+            <a href="#">Introduzione</a>
+            <a href="#">Norme sulla privacy</a>
+            <a href="#">Termini di servizio</a>
+            <a href="#">Tecnologie</a>
+            <a href="#" class="active">Domande frequenti</a>
+          </nav>
       </header>
-      <div class="container">
+      <main>
+          <div class="container">
 
-          <?php
-            foreach ($domandeFrequenti as $contenuto) {
-            ?>
-              <h2>
-                  <?php
-                    echo $contenuto["domanda"];
-                    ?>
-              </h2>
-              <p>
-                  <?php echo $contenuto["risposta"]; ?>
-              </p>
               <?php
-                if (key_exists("paragrafo", $contenuto)) {
+                foreach ($domandeFrequenti as $contenuto) {
                 ?>
-                  <h4>
-                      <?php echo $contenuto["paragrafo"]["titolo"]; ?>
-                  </h4>
+                  <h2>
+                      <?php
+                        echo $contenuto["domanda"];
+                        ?>
+                  </h2>
                   <p>
-                      <?php echo $contenuto["paragrafo"]["p"]; ?>
+                      <?php echo $contenuto["risposta"]; ?>
                   </p>
+                  <?php
+                    if (key_exists("paragrafo", $contenuto)) {
+                    ?>
+                      <h4>
+                          <?php echo $contenuto["paragrafo"]["titolo"]; ?>
+                      </h4>
+                      <p>
+                          <?php echo $contenuto["paragrafo"]["p"]; ?>
+                      </p>
+                  <?php
+                    }
+                    ?>
               <?php
                 }
                 ?>
-          <?php
-            }
-            ?>
 
-      </div>
+          </div>
+      </main>
+
   </body>
 
   </html>

@@ -19,22 +19,6 @@ h4{
     margin-top: 50px;
     color: $gray;
 }
-header{
-    display: flex;
-    img{
-        width: 100px;
-        height: auto;
-    }
-    .logo-container{
-        @include vertical-align;
-    }
-    .page-title{
-        @include vertical-align;
-        font-size: 17px;
-        font-weight: 600;
-        color: $gray
-    }
-}
 ol{
     li{
         padding-left: 10px;
@@ -43,4 +27,7 @@ ol{
     ol{
         list-style-type:lower-alpha;
     }
+}
+main{
+    margin-top: 175px;
 }
